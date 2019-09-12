@@ -1,26 +1,32 @@
+/**
+*   引入核心文件
+*/
 import React from 'react';
-import logo from './logo.svg';
+/**
+*	引入主入口组件样式
+*/
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+/**
+*	引入父组件
+*/
+import Father from './conponents/father-component.js';
+/**
+*	创建类组件
+*/
+class App extends React.Component {
+	// 类组件模板必须通过render方法提供
+	// render方法是固定的，提供渲染的组件
+	render () {
+		// 返回一个jsx元素
+		return (
+			// 这个组件的根节点
+			<div>
+				<Father></Father>
+			</div>
+		)
+	}
+};
+/**
+*	导出类组件
+*/
 export default App;
