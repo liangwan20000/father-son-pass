@@ -12,7 +12,9 @@ import './App.css';
 // 父子传值
 // import Father from './conponents/father-component.js';
 // 表单
-import Form from './conponents/form.js';
+// import Form from './conponents/form.js';
+// 表单案例
+import FormCase from './conponents/form-case.js';
 /**
 *	创建类组件
 */
@@ -24,7 +26,7 @@ class App extends React.Component {
 		return (
 			// 这个组件的根节点
 			<div>
-				<Form></Form>
+				<FormCase></FormCase>
 			</div>
 		)
 	}
