@@ -163,6 +163,14 @@ class FormCase extends React.Component {
 
 	// 点击修改图书
 	modifybook = function (event) {
+		// 最新name与数据列表name进行比较，如果有相等则不添加
+		let Nameindex = this.state.bookList.findIndex(item => {
+			return item.bname === this.state.bookName
+		});
+		// 判断
+		if (Nameindex !== -1) {
+			return alert('名称重复');
+		}
 		// 复制一份数据列表
 		let list = [...this.state.bookList];
 		// 根据ID找到数据索引
@@ -175,7 +183,9 @@ class FormCase extends React.Component {
 		// 重新赋值
 		this.setState({
 			bookList: list,
-			flag: true
+			flag: true,
+			bookId: '',
+			bookName: ''
 		})
 	}
 

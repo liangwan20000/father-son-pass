@@ -14,7 +14,9 @@ import './App.css';
 // 表单
 // import Form from './conponents/form.js';
 // 表单案例
-import FormCase from './conponents/form-case.js';
+// import FormCase from './conponents/form-case.js';
+// 表单详情
+import FormDetails from './conponents/form-details.js';
 /**
 *	创建类组件
 */
@@ -26,7 +28,7 @@ class App extends React.Component {
 		return (
 			// 这个组件的根节点
 			<div>
-				<FormCase></FormCase>
+				<FormDetails></FormDetails>
 			</div>
 		)
 	}
